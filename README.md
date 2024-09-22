@@ -1,2 +1,2 @@
-# ansible-vm
-ma vm linux pour executer mes labs. 
+# rufus
+my vm for my labs. The place for me to learn linux.
