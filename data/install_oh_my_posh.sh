@@ -65,7 +65,7 @@ if ! grep -q 'oh-my-posh' ~/.bashrc; then
     echo_step "Mise à jour du profil..."
     echo 'export PATH="$PATH:'"$BIN_DIR"'"' >> ~/.bashrc
     echo 'eval "$(oh-my-posh init bash --config '"$DIR"'/dev-remote.omp.yaml)"' >> ~/.bashrc
-    echo_success "Profil mis à jour. Veuillez exécuter 'source ~/.bashrc' pour appliquer les changements."
+    echo_success "Profil mis à jour."
 else
     echo_success "Profil déjà mis à jour."
 fi
@@ -94,3 +94,6 @@ sudo apt-get clean
 
 # Print completion message
 echo_success "Installation des bibliothèques et outils de base terminée !"
+
+# actualisation du terminal
+exec bash
